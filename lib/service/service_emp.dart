@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:employeid/models/emps.dart';
+import 'package:employeid/models/request_model.dart';
 import 'package:http/http.dart';
 
 class Network {

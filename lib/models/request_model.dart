@@ -1,4 +1,4 @@
-import 'package:employeid/models/emp.dart';
+import 'package:employeid/models/employee_model.dart';
 
 class EmpList {
   String? status;

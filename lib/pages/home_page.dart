@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../models/emp.dart';
-import '../models/emps.dart';
+import '../models/employee_model.dart';
+import '../models/request_model.dart';
 import '../service/service_emp.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     parsingEmpList();
-    print(_items);
+    print(a);
     super.initState();
   }
 
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   void parsingEmpList() async {
     String? response=await Network.GET(Network.API_EMPS);
     EmpList empList=Network.parsingEmployees(response!);
-    _items=empList;
+    _items=empList.data;
   }
 
 }
