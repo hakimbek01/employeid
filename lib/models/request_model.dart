@@ -1,4 +1,4 @@
-import 'package:employeid/models/employee_model.dart';
+import 'employee_model.dart';
 
 class EmpList {
   String? status;
@@ -11,9 +11,9 @@ class EmpList {
    data=List<Employee>.from(json['data'].map((e) => Employee.fromJson(e)));
   }
 
-  Map<String,dynamic> toJson()=>{
-    'status':status,
-    'message':message,
-    'data':List.from(data!.map((e) => e.toJson()))
+  Map<String,dynamic> toJson() =>{
+    "status":status,
+    "message":message,
+    "data":List.from(data!.map((e) => e.toJson()))
   };
 }
